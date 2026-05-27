@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TECH WORLD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="loader">Loading...</div>
+<!-- NAV -->
+<nav>
+  <h1 class="logo">TECH WORLD</h1>
+
+  <div>
+    <a href="index.html">Home</a>
+    <a href="#">Phones</a>
+    <a href="#">Laptops</a>
+    <a href="#">AI</a>
+  </div>
+
+  <input type="text" placeholder="Search..." class="search">
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h2>Latest Tech News & Electronics</h2>
+  <p>أفضل الهواتف واللابتوبات وأخبار الذكاء الاصطناعي</p>
+  <button>Explore Now</button>
+</section>
+<section class="featured">
+  <h2>🔥 Featured Article</h2>
+
+  <div class="featured-card" id="featured"></div>
+</section>
+<!-- CATEGORIES -->
+<section class="categories">
+  <button onclick="filterPosts('all')">All</button>
+  <button onclick="filterPosts('phones')">Phones</button>
+  <button onclick="filterPosts('laptops')">Laptops</button>
+  <button onclick="filterPosts('ai')">AI</button>
+  <button onclick="filterPosts('gaming')">Gaming</button>
+</section>
+
+<!-- POSTS -->
+<section class="posts">
+
+  <div class="post-card" data-category="phones">
+    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+    <h3>Best Smartphone 2026</h3>
+    <p>Latest phones comparison...</p>
+    <a href="post1.html"><button>Read More</button></a>
+  </div>
+
+  <div class="post-card" data-category="ai">
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+    <h3>AI Revolution</h3>
+    <p>How AI is changing everything...</p>
+    <a href="#"><button>Read More</button></a>
+  </div>
+
+  <div class="post-card" data-category="laptops">
+    <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853">
+    <h3>Best Laptop for Students</h3>
+    <p>Top laptops for study and work...</p>
+    <a href="#"><button>Read More</button></a>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <h3>TECH WORLD</h3>
+  <p>All Rights Reserved © 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
+<button onclick="window.location.href='index.html'" class="back-btn">
+  ⬅ Back to Home
+</button>
